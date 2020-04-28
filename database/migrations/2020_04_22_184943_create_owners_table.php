@@ -18,7 +18,8 @@ class CreateOwnersTable extends Migration
             $table->string('name',60);
             $table->string('surname',60);
             $table->date('from_date' );
-            $table->date('to_date');
+            $table->date('to_date')->nullable()->default(null);
+            $table->timestamps();
         });
     }
 
