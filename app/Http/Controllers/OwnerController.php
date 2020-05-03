@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 
 class OwnerController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware(['auth', 'isAdmin']);
+    }
+
     public function ownerList(){
         return view('owners', ['owners' => Owner::all()]);
     }

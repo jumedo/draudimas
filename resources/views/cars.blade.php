@@ -23,16 +23,21 @@
                                 <td> {{$car->brand}}</td>
                                 <td> {{$car->model}}</td>
                                 <td> {{$car->owner->name}} {{$car->owner->surname}}</td>
-                                <td> <a class="btn badge-info" href="{{route('editCar', $car->id)}}">Redaguoti</a>
-                                    <a class="btn badge-danger" href="{{route('deleteCar', $car->id)}}">Trinti</a></td>
-
+                                <td>
+                                    @if (Auth::user()->type==1)
+                                        <a class="btn badge-info" href="{{route('editCar', $car->id)}}">Redaguoti</a>
+                                        <a class="btn badge-danger" href="{{route('deleteCar', $car->id)}}">Trinti</a>
+                                    @endif
+                                </td>
                             </tr>
 
                         @endforeach
                         </tbody>
 
                     </table>
-                    <a href="{{route('addCar')}}" class="btn btn-success">Pridėti naują automobilį</a>
+                    @if (Auth::user()->type==1)
+                        <a href="{{route('addCar')}}" class="btn btn-success">Pridėti naują automobilį</a>
+                    @endif
                 </div>
             </div>
         </div>

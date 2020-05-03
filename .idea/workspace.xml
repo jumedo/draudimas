@@ -3,18 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="3cc52a99-bb5c-4e87-a04c-17564222e98e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Car.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Car.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CarController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CarController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OwnerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OwnerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Owner.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Owner.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_22_184943_create_owners_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_22_184943_create_owners_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_27_115724_create_cars_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_27_115724_create_cars_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/isAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/isAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_28_200140_user_add_type.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_28_200140_user_add_type.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/addCar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/addCar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/addOwner.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/addOwner.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/cars.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cars.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/editCar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/editCar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/editOwner.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/editOwner.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/owners.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/owners.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -169,7 +165,8 @@
       <option name="presentableId" value="Default" />
       <updated>1587579052898</updated>
       <workItem from="1587579054296" duration="2981000" />
-      <workItem from="1587985251165" duration="24649000" />
+      <workItem from="1587985251165" duration="29087000" />
+      <workItem from="1588494250253" duration="2859000" />
     </task>
     <servers />
   </component>

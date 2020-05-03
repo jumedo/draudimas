@@ -9,6 +9,11 @@ use Illuminate\Http\Request;
 
 class CarController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware(['auth', 'isAdmin']);
+    }
+
     function CarList()
     {
         return view('cars', ['cars' => Car::all()]);
@@ -24,6 +29,14 @@ class CarController extends Controller
 
     public function insertCar(Request $request)
     {
+        $this->validate($request, [
+            'reg_number'=> 'min:3|max:10|unique:cars,reg_number'
+        ]
+//            ,
+//            [
+//                'reg_number.unique' => "Toks automobilis jau yra !"
+//            ]
+        );
         $car = new Car();
         $car->reg_number = $request->reg_number;
         $car->brand = $request->brand;
@@ -35,7 +48,7 @@ class CarController extends Controller
         return redirect()->route('carList'
         );
     }
-    
+
 
     public function editCar($id)
     {
@@ -45,6 +58,14 @@ class CarController extends Controller
 
     public function updateCar($id, Request $request)
     {
+        $this->validate($request, [
+            'reg_number'=> 'min:3|max:10|unique:cars,reg_number'
+        ]
+//            ,
+//            [
+//                'reg_number.unique' => "Toks reg_number automobilis jau yra !"
+//            ]
+        );
         $car = Car::find($id);
         $car->reg_number = $request->reg_number;
         $car->brand = $request->brand;

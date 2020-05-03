@@ -34,3 +34,8 @@ Route::post('/addOwner', 'OwnerController@insertOwner')->name('insertOwner');
 Route::get('/editOwner/{id}', 'OwnerController@editOwner')->name('editOwner');
 Route::post('/updateOwner/{id}', 'OwnerController@updateOwner')->name('updateOwner');
 Route::get('/deleteOwner/{id}', 'OwnerController@deleteOwner')->name('deleteOwner');
+
+
+//Route::middleware('auth')->group(function (){
+//    Route::get('/cars', 'CarController@carList')->name('carList');
+//});
